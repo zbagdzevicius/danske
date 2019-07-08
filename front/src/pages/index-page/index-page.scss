@@ -1,0 +1,10 @@
+@import './../../components/styles/grid.scss';
+
+.container {
+    padding: $padding;
+
+    .title {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}

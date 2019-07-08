@@ -1,0 +1,17 @@
+@import './../../styles/grid.scss';
+@import './../../styles/colors.scss';
+
+.input-wrapper {
+    
+    .input {
+        padding: $padding;
+        border-radius: $borderRadius;
+        width: 100%;
+    }
+
+    .error-label {
+        margin-top: $padding / 2;
+        color: $red;
+        font-size: 0.9rem;
+    }
+}

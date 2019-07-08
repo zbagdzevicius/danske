@@ -1,0 +1,26 @@
+@import './../styles/grid.scss';
+@import './../styles/colors.scss';
+
+.button {
+    border: 1px solid $green;
+    border-radius: $borderRadius;
+    padding: $padding;
+    color: $green;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $lightGreen;
+    }
+
+    &.disabled {
+        color: $darkGrey;
+        border-color: $darkGrey;
+        background-color: $grey;
+        cursor: not-allowed;
+    }
+}

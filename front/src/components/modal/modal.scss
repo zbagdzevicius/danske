@@ -1,0 +1,54 @@
+@import './../styles/grid.scss';
+@import './../styles/colors.scss';
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .content-wrapper {
+        padding: $padding;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: $borderRadius;
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+
+        @media (max-width: $breakpoint-tablet) {
+            width: 90%;
+        }
+
+        .content {
+            flex: auto;
+            text-align: center;
+
+            & > * {
+                &:first-child {
+                    margin-top: $padding;    
+                }
+
+                margin-bottom: $padding;
+            }
+
+            .results {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

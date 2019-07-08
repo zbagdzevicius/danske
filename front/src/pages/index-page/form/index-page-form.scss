@@ -1,0 +1,11 @@
+@import './../../../components/styles/grid.scss';
+
+.index-page-form {
+    display: flex;
+    flex-direction: column;
+    padding: $padding;
+
+    & > *:not(:first-child) {
+        margin-top: $padding;
+    }
+}
